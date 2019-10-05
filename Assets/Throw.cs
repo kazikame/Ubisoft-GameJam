@@ -21,12 +21,16 @@ public class Throw : MonoBehaviour {
     public int hitCount = 3;
     public int hits_taken = 0;
     float last_hit_time;
+    bool isBlocked;
+    public float stunEps = 4f;
+
+    public float meleeDamage = -2f;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "picked")
         {
             // Insert code for hurt :/ :/
-
+            gameObject.GetComponent<PlayerCPI>().changeCPI(collision.gameObject.GetComponent<destroyOnInvisible>().damage);
             Destroy(collision.gameObject);
         }
     }
@@ -71,7 +75,14 @@ public class Throw : MonoBehaviour {
                 textbox = Instantiate(nahiPadha, transform, false);
                 textbox.transform.position += new Vector3(0, 4, 0);
                 text_gen_time = Time.time;
-                other.gameObject.GetComponent<Throw>().hits_taken++;
+                Throw temp = other.gameObject.GetComponent<Throw>();
+                if (!temp.isBlocked)
+                {
+                    // Hurt other person :D\
+                    other.gameObject.GetComponent<PlayerCPI>().changeCPI(meleeDamage);
+                    temp.hits_taken++;
+                    temp.last_hit_time = Time.time;
+                }
             }
         }
         //else if (other.gameObject.tag == "melee")
@@ -97,11 +108,14 @@ public class Throw : MonoBehaviour {
     }
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Space) && throwObject == null)
-        //{
-        //    throwObject = Instantiate(sphere, transform) as GameObject;
-        //    throwObject.transform.position += (new Vector3(0, 1, 0)) + Quaternion.Euler(0, 90, 0) * transform.forward;
-        //}
+        if (isBlocked)
+        {
+            if (Time.time - last_hit_time > stunEps)
+            {
+                isBlocked = false;
+                GetComponent<knight_walk>().isBlocked = false;
+            }
+        }
         if (Input.GetKeyDown(throwKey))
         {
             if (throwObject != null)
@@ -114,7 +128,7 @@ public class Throw : MonoBehaviour {
                 throwObject = null;
             }
         }
-        Debug.Log(transform.forward);
+        //Debug.Log(transform.forward);
         if (textbox != null)
         {
             if (Time.time - text_gen_time > textEps)
@@ -133,6 +147,8 @@ public class Throw : MonoBehaviour {
             else if (hits_taken >= 3)
             {
                 // STUNNNNNN!
+                isBlocked = true;
+                GetComponent<knight_walk>().isBlocked = true;
                 hits_taken = 0;
             }
         }

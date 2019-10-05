@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7377302874498238272
+--- !u!1 &2157203618921875831
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7377302874498238274}
-  - component: {fileID: 7377302874498238273}
+  - component: {fileID: 5446204556799279782}
+  - component: {fileID: 884394190768345626}
   m_Layer: 0
   m_Name: BoardManager
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7377302874498238274
+--- !u!4 &5446204556799279782
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7377302874498238272}
+  m_GameObject: {fileID: 2157203618921875831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,22 +31,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7377302874498238273
+--- !u!114 &884394190768345626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7377302874498238272}
+  m_GameObject: {fileID: 2157203618921875831}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55ea6af1b7d994d2ba8decb235f7820f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: {fileID: 8895081294836146062, guid: 333c4e075cc4d42d9a7464a6b7c110ae, type: 3}
-  outerwall: {fileID: 2239850728324535772, guid: fe008504023994c858b9572c30b14bb4,
-    type: 3}
+  floor: {fileID: 2663837270596590514, guid: 034b8314be562674d843dce0b7d24b2f, type: 3}
   magazine: {fileID: 4580312908337627069, guid: 9de96c1e8e6aa5347ad1fd52cddd427a,
     type: 3}
   disk: {fileID: 4580312908337627069, guid: 9de96c1e8e6aa5347ad1fd52cddd427a, type: 3}
-  table: {fileID: 578895568143275639, guid: e9c3dc07e1287a941b4d383b93396547, type: 3}
+  table: {fileID: 578895568143275639, guid: 70c1f0a2b78ee1c41ab356bed7f671f7, type: 3}
+  timeelapsed: 0

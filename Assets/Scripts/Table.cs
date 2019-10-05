@@ -27,7 +27,7 @@ public class Table : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        if (!studying && other.gameObject.tag == "Player")
+        if (!studying && other.gameObject.tag == "player")
         {
             GameObject nearPlayer = other.gameObject;
             //Debug.Log("Player Near");
@@ -46,11 +46,11 @@ public class Table : MonoBehaviour
     {
         if (studying)
         {
-            if (Input.GetKeyUp(current_player.GetComponent<knight_walk>().Study)|| current_player.GetComponent<Player_status>().isHit == true)
+            if (Input.GetKeyUp(current_player.GetComponent<knight_walk>().Study)|| current_player.GetComponent<Throw>().hits_taken > 0)
             {
                 studying = false;
                 current_player.GetComponent<Player_status>().lockControls = false;
-                current_player.GetComponent<Player_status>().isHit = false;
+                current_player.GetComponent<Throw>().hits_taken = 0;
                 elapsed = 0;
             }
             else
@@ -65,7 +65,7 @@ public class Table : MonoBehaviour
                     //current_player.GetComponent<Player_status>().CPI += 4;
                     current_player.GetComponent<PlayerCPI>().changeCPI(0.5f);
                     current_player.GetComponent<Player_status>().lockControls = false;
-                    current_player.GetComponent<Player_status>().isHit = false;
+                    current_player.GetComponent<Throw>().hits_taken = 0;
                 }
             }
         }

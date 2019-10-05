@@ -11,7 +11,7 @@ public class knight_walk : MonoBehaviour
     int runAnim = 0;
     Animator anim;
     public KeyCode up, down, left, right, run, Study;
-
+    public bool isBlocked = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,10 +76,13 @@ public class knight_walk : MonoBehaviour
 
     void FixedUpdate()
     {
-        anim.SetInteger("run", walkAnim & runAnim);
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveDir), 0.15F);
-        controller.Move(moveDir * Time.deltaTime);
-        anim.SetInteger("walk", walkAnim);
+        if (!isBlocked && !GetComponent<Player_status>().lockControls)
+        {
+            anim.SetInteger("run", walkAnim & runAnim);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveDir), 0.15F);
+            controller.Move(moveDir * Time.deltaTime);
+            anim.SetInteger("walk", walkAnim);
+        }
 
     }
 
