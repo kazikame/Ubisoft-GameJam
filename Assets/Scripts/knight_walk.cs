@@ -13,6 +13,7 @@ public class knight_walk : MonoBehaviour
     int walkAnim = 0;
     int runAnim = 0;
     Animator anim;
+    public KeyCode up, down, left, right, run;
 
     // Start is called before the first frame update
     void Start()
@@ -27,33 +28,33 @@ public class knight_walk : MonoBehaviour
         
         Vector3 temp = Vector3.zero;
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S))
+        if (Input.GetKey(up) || Input.GetKey(left) || Input.GetKey(right) || Input.GetKey(down))
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(up))
             {
                 walkAnim = 1;
                 temp += (new Vector3(0, 0, 1)) * speed;
             }
 
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(left))
             {
                 walkAnim = 1;
                 temp += (new Vector3(-1, 0, 0)) * speed;
             }
 
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKey(right))
             {
                 walkAnim = 1;
                 temp += (new Vector3(1, 0, 0)) * speed;
             }
 
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(down))
             {
                 walkAnim = 1;
                 temp += (new Vector3(0, 0, -1)) * speed;
             }
 
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(run))
             {
                 runAnim = 1;
             }
