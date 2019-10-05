@@ -18,7 +18,7 @@ public class pick_obj : MonoBehaviour
                 throw_drop();
             else
                 Pickup();
-        }//mause If
+        }//mouse If
 
         if (!canHold && ball)
             ball.transform.position = guide.position;
@@ -28,7 +28,7 @@ public class pick_obj : MonoBehaviour
     //We can use trigger or Collision
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "ball")
+        if (col.gameObject.tag == "pickable")
             if (!ball) // if we don't have anything holding
                 ball = col.gameObject;
     }
