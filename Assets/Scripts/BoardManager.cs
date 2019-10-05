@@ -10,7 +10,8 @@ public class BoardManager : MonoBehaviour
     public GameObject magazine;
     public GameObject disk;
     public GameObject table;
-    public GameObject player;
+    public GameObject player1;
+    public GameObject player2;
     private List<Vector3> positions = new List<Vector3>();
 
     void InitializePositions()
@@ -82,7 +83,8 @@ public class BoardManager : MonoBehaviour
         GiveRandomPosition(magazine);
         Instantiate(floor, new Vector3(0f, 0f, 0f), Quaternion.identity);
         Instantiate(table, new Vector3(0f, 1f, 0f), Quaternion.identity);
-        Instantiate(player, new Vector3(0f, 0.5f, floor.transform.position.z + 0.4f * floor.transform.localScale.z), Quaternion.Euler(new Vector3(0,180,0)));
+        Instantiate(player1, new Vector3(0f, 0.5f, floor.transform.position.z + 0.4f * floor.transform.localScale.z), Quaternion.Euler(new Vector3(0,180,0)));
+        Instantiate(player2, new Vector3(0f, 0.5f, floor.transform.position.z - 0.4f * floor.transform.localScale.z), Quaternion.Euler(new Vector3(0, 180, 0)));
         PlaceWalls();
         
 
