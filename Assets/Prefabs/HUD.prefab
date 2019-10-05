@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2482936047185357814
+--- !u!1 &3669752017740298507
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2482936047185357818}
-  - component: {fileID: 2482936047185357813}
-  - component: {fileID: 2482936047185357812}
-  - component: {fileID: 2482936047185357815}
-  - component: {fileID: 4193449640874450256}
+  - component: {fileID: 3669752017740298506}
+  - component: {fileID: 3669752017740298511}
+  - component: {fileID: 3669752017740298508}
+  - component: {fileID: 3669752017740298509}
+  - component: {fileID: 3669752017740298510}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -20,13 +20,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2482936047185357818
+--- !u!224 &3669752017740298506
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482936047185357814}
+  m_GameObject: {fileID: 3669752017740298507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
@@ -39,17 +39,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!223 &2482936047185357813
+--- !u!223 &3669752017740298511
 Canvas:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482936047185357814}
+  m_GameObject: {fileID: 3669752017740298507}
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 802621445617013103, guid: 260779b3f1abddd4b93e81bdf03a968f, type: 3}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -60,19 +60,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &2482936047185357812
+--- !u!114 &3669752017740298508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482936047185357814}
+  m_GameObject: {fileID: 3669752017740298507}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -82,13 +82,13 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &2482936047185357815
+--- !u!114 &3669752017740298509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482936047185357814}
+  m_GameObject: {fileID: 3669752017740298507}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -99,19 +99,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4193449640874450256
+--- !u!114 &3669752017740298510
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482936047185357814}
+  m_GameObject: {fileID: 3669752017740298507}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32953ec8929353144aeb2e37bfd77aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthbar1: {fileID: 5546511959221504731, guid: 1ffd3cbe730e17b4099ca3e63d8f0d7c,
+  HealthBar1: {fileID: 4270434421652066552, guid: 1ffd3cbe730e17b4099ca3e63d8f0d7c,
     type: 3}
-  healthbar2: {fileID: 8347305633293093666, guid: a9c4fa2466fa9704195038a7b39a753d,
+  HealthBar2: {fileID: 201477294330126416, guid: a9c4fa2466fa9704195038a7b39a753d,
     type: 3}

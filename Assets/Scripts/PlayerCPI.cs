@@ -18,7 +18,7 @@ public class PlayerCPI : MonoBehaviour
         HealthBar.value = currentCPI;
         HealthBar.image.color = Color.Lerp(MinHealthColor, MaxHealthColor, currentCPI / maxCPI);
     }
-
+    
     // Update is called once per frame
     public void changeCPI(float change)
     {

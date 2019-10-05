@@ -50,5 +50,5 @@ MonoBehaviour:
     type: 3}
   disk: {fileID: 4580312908337627069, guid: 9de96c1e8e6aa5347ad1fd52cddd427a, type: 3}
   table: {fileID: 4099107314282169558, guid: 774f9d9d4df4841228e876ee98c7665f, type: 3}
-  player1: {fileID: 4996619072347792120, guid: 7c18efe216f7948c5a3756736ba7ad58, type: 3}
-  player2: {fileID: 1751283574239133921, guid: 1c62e6a0d6760486691aba0ac7040ed2, type: 3}
+  player1: {fileID: 2106250032156927196, guid: 7c18efe216f7948c5a3756736ba7ad58, type: 3}
+  player2: {fileID: 6129534672789833789, guid: 1c62e6a0d6760486691aba0ac7040ed2, type: 3}

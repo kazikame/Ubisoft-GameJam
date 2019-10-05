@@ -83,8 +83,8 @@ public class BoardManager : MonoBehaviour
         GiveRandomPosition(magazine);
         Instantiate(floor, new Vector3(0f, 0f, 0f), Quaternion.identity);
         Instantiate(table, new Vector3(0f, 1f, 0f), Quaternion.identity);
-        Instantiate(player1, new Vector3(0f, 0.5f, floor.transform.position.z + 0.4f * floor.transform.localScale.z), Quaternion.Euler(new Vector3(0,180,0)));
-        Instantiate(player2, new Vector3(0f, 0.5f, floor.transform.position.z - 0.4f * floor.transform.localScale.z), Quaternion.Euler(new Vector3(0, 180, 0)));
+        //Instantiate(player1, new Vector3(0f, 0.5f, floor.transform.position.z + 0.4f * floor.transform.localScale.z), Quaternion.Euler(new Vector3(0,180,0)));
+        //Instantiate(player2, new Vector3(0f, 0.5f, floor.transform.position.z - 0.4f * floor.transform.localScale.z), Quaternion.Euler(new Vector3(0, 180, 0)));
         PlaceWalls();
         
 

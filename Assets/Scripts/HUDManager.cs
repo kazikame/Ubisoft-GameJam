@@ -1,23 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public GameObject healthbar1;
-    public GameObject healthbar2;
+    [SerializeField] GameObject Player1;
+    [SerializeField] GameObject Player2;
+    public Slider HealthBar1;
+    public Slider HealthBar2;
 
-    void Start()
+    void Awake()
     {
-        Instantiate(healthbar1, new Vector3(0f, 0f, 0f), Quaternion.identity);
-        Instantiate(healthbar2, new Vector3(0f, 0f, 0f), Quaternion.identity);
+        RectTransform objectRectTransform = gameObject.GetComponent<RectTransform>();
+        Instantiate(HealthBar1, new Vector3(15f, 10f, 0f), Quaternion.identity, transform);
+        Instantiate(HealthBar2, new Vector3(objectRectTransform.rect.width-175f, 10f, 0f), Quaternion.identity, transform);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+        var player1 = Player1.GetComponent<PlayerCPI>();
+        HealthBar1.value = player1.HealthBar.value;
+        var player2 = Player2.GetComponent<PlayerCPI>();
+        HealthBar2.value = player2.HealthBar.value;
+        //Destroy(HealthBar1);
+        //Destroy(HealthBar2);
+        //RectTransform objectRectTransform = gameObject.GetComponent<RectTransform>();
+        //Instantiate(HealthBar1, new Vector3(15f, 10f, 0f), Quaternion.identity, transform);
+        //Instantiate(HealthBar2, new Vector3(objectRectTransform.rect.width - 175f, 10f, 0f), Quaternion.identity, transform);
     }
 }
