@@ -12,8 +12,9 @@ public class knight_walk : MonoBehaviour
     public KeyCode Left = KeyCode.A;
 
     public KeyCode Study = KeyCode.E;
-
-
+    public bool iamstudying;
+    public int playerID = 1;
+    public int CPI = 6;
     Vector3 moveDir = Vector3.zero;
 	CharacterController controller;
     int walkAnim = 0;
@@ -30,57 +31,61 @@ public class knight_walk : MonoBehaviour
     // Update is called once per wframe
     void Update()
     {
-        
-        Vector3 temp = Vector3.zero;
-
-        if (Input.GetKey(Up) || Input.GetKey(Left) || Input.GetKey(Right) || Input.GetKey(Down))
+        if (!this.GetComponent<Player_status>().lockControls)
         {
-            if (Input.GetKey(Up))
-            {
-                walkAnim = 1;
-                temp += (new Vector3(0, 0, 1)) * speed;
-            }
+            Vector3 temp = Vector3.zero;
 
-            if (Input.GetKey(Left))
-            {
-                walkAnim = 1;
-                temp += (new Vector3(-1, 0, 0)) * speed;
-            }
 
-            if (Input.GetKey(Right))
-            {
-                walkAnim = 1;
-                temp += (new Vector3(1, 0, 0)) * speed;
-            }
 
-            if (Input.GetKey(Down))
+            if (Input.GetKey(Up) || Input.GetKey(Left) || Input.GetKey(Right) || Input.GetKey(Down))
             {
-                walkAnim = 1;
-                temp += (new Vector3(0, 0, -1)) * speed;
-            }
+                if (Input.GetKey(Up))
+                {
+                    walkAnim = 1;
+                    temp += (new Vector3(0, 0, 1)) * speed;
+                }
 
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                runAnim = 1;
+                if (Input.GetKey(Left))
+                {
+                    walkAnim = 1;
+                    temp += (new Vector3(-1, 0, 0)) * speed;
+                }
+
+                if (Input.GetKey(Right))
+                {
+                    walkAnim = 1;
+                    temp += (new Vector3(1, 0, 0)) * speed;
+                }
+
+                if (Input.GetKey(Down))
+                {
+                    walkAnim = 1;
+                    temp += (new Vector3(0, 0, -1)) * speed;
+                }
+
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    runAnim = 1;
+                }
+                else
+                {
+                    runAnim = 0;
+                }
             }
             else
             {
-                runAnim = 0;
+                walkAnim = 0;
             }
-        }
-        else
-        {
-            walkAnim = 0;
-        }
 
-        
-        temp += temp * (walkAnim & runAnim);
-        moveDir = temp;
-        
 
-        //rot += Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
-        //transform.eulerAngles = new Vector3(0, rot, 0);
-        //controller.Move(moveDir * Time.deltaTime);
+            temp += temp * (walkAnim & runAnim);
+            moveDir = temp;
+
+
+            //rot += Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
+            //transform.eulerAngles = new Vector3(0, rot, 0);
+            //controller.Move(moveDir * Time.deltaTime);
+        }
     }
 
     void FixedUpdate()
