@@ -8,6 +8,7 @@ TagManager:
   - picked
   - melee
   - meleepicked
+  - player
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - 
+  - Player1
+  - Player2
   - 
   - 
   - 

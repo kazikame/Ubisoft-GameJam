@@ -3,9 +3,6 @@
 public class knight_walk : MonoBehaviour
 {
 	float speed = 6;
-	float rotSpeed = 160;
-    float rot = 0f;
-	float gravity = 8;
 
 
     Vector3 moveDir = Vector3.zero;
@@ -44,13 +41,13 @@ public class knight_walk : MonoBehaviour
 
             if (Input.GetKey(right))
             {
-                walkAnim = 1;
+                walkAnim = 1;                                               
                 temp += (new Vector3(1, 0, 0)) * speed;
             }
 
             if (Input.GetKey(down))
             {
-                walkAnim = 1;
+                walkAnim = 1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
                 temp += (new Vector3(0, 0, -1)) * speed;
             }
 
@@ -71,7 +68,6 @@ public class knight_walk : MonoBehaviour
         
         temp += temp * (walkAnim & runAnim);
         moveDir = temp;
-        
 
         //rot += Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
         //transform.eulerAngles = new Vector3(0, rot, 0);
