@@ -62,7 +62,8 @@ public class Table : MonoBehaviour
                     elapsed = 0;
                     studying = false;
                     //
-                    current_player.GetComponent<Player_status>().CPI += 4;
+                    //current_player.GetComponent<Player_status>().CPI += 4;
+                    current_player.GetComponent<PlayerCPI>().changeCPI(0.5f);
                     current_player.GetComponent<Player_status>().lockControls = false;
                     current_player.GetComponent<Player_status>().isHit = false;
                 }

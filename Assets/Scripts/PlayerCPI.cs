@@ -29,6 +29,6 @@ public class PlayerCPI : MonoBehaviour
 
     private void Update()
     {
-        changeCPI(-0.01f);
+        
     }
 }

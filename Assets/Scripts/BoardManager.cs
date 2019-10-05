@@ -10,10 +10,11 @@ public class BoardManager : MonoBehaviour
     public GameObject magazine;
     public GameObject disk;
     public GameObject table;
-    public GameObject player1;
-    public GameObject player2;
+    //public GameObject player1;
+    //public GameObject player2;
     private List<Vector3> positions = new List<Vector3>();
-
+    private const float tabletime = 7f;
+    private float timeelapsed;
     void InitializePositions()
     {
         Vector3 scale = floor.transform.localScale;
@@ -73,11 +74,14 @@ public class BoardManager : MonoBehaviour
             randomposition = positions[randindex];
             
         } while ((Physics.OverlapBox(randomposition, gameobject.transform.localScale / 2)).Length != 0);
-        Instantiate(gameobject, randomposition, Quaternion.identity);
+
+        Instantiate(gameobject, randomposition + new Vector3(0f, 1f, 0f), Quaternion.identity);
+        
     }
     // Start is called before the first frame update
     void Awake()
     {
+        timeelapsed = 0f;
         InitializePositions();
         GiveRandomPosition(disk);
         GiveRandomPosition(magazine);
@@ -93,6 +97,19 @@ public class BoardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timeelapsed += Time.deltaTime;
+        if (!table.GetComponent<Table>().studying && timeelapsed >= tabletime)
+        {
+            Vector3 randomposition = new Vector3();
+            do
+            {
+
+                int randindex = Random.Range(0, positions.Count);
+                randomposition = positions[randindex];
+
+            } while ((Physics.OverlapBox(randomposition, table.transform.localScale / 2)).Length != 0);
+
+            table.transform.position = randomposition + new Vector3(0f, 1f, 0f);
+        }
     }
 }
