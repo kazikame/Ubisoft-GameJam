@@ -1,0 +1,450 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "knight_walk.cs",
+			"settings":
+			{
+				"buffer_size": 355,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"omnisharp: err",
+				"OmniSharpSublime: Show Server Output"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Build With: Markdown"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"Mark",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Prolo",
+				"Set Syntax: SWI-Prolog"
+			],
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/saksham/throwTest"
+	],
+	"file_history":
+	[
+		"/C/Users/saksham/throwTest/Assets/settings.sublime-workspace",
+		"/C/Users/saksham/throwTest/Assets/Scripts/knight_walk.cs",
+		"/C/Users/saksham/throwTest/settings.sublime-project",
+		"/C/Users/saksham/throwTest/Assets/knight_walk.cs",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab4/lab4_new/lab4/lab4-170050045/kernelcluster.py",
+		"/C/Users/saksham/AppData/Local/Temp/Temp1_lab4_new_zip.zip/lab4/1_PCA/report.txt",
+		"/C/Users/saksham/AppData/Local/Temp/Temp1_lab4_new_zip.zip/lab4/1_PCA/pca.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab4/lab4_new/lab4/1_PCA/pca.py",
+		"/C/Users/saksham/AppData/Local/Temp/Temp1_lab4.zip/lab4/1_PCA/pca.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab4/lab4/2_K-means/cluster.py",
+		"//wsl$/Ubuntu/home/saksham47/Documents/Operating_Systems/dynamicMemLab/alloc.h",
+		"//wsl$/Ubuntu/home/saksham47/Documents/Operating_Systems/dynamicMemLab/alloc.cpp",
+		"//wsl$/Ubuntu/home/saksham47/Documents/Operating_Systems/dynamicMemLab/alloc.c",
+		"//wsl$/Ubuntu/home/saksham47/Documents/Operating_Systems/dynamicMemLab/test_alloc2.c",
+		"//wsl$/Ubuntu/home/saksham47/Documents/Operating_Systems/dynamicMemLab/test.c",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab4/lab4_new/lab4/2_K-means/kernelcluster.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/kernel_perceptron.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab4/lab4/1_PCA/pca.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab4/lab4/2_K-means/kernelcluster.py",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS753/assgmt2/kaldi/egs/assgmt2/recipe/corpus/LM/train.count",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS753/assgmt2/kaldi/egs/assgmt2/recipe/corpus/LM/train.lm",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab4/lab4_new/lab4/2_K-means/cluster.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS341-Computer_Architecture_Lab/170050045-06/winmips64/factorial.s",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS341-Computer_Architecture_Lab/170050045-06/winmips64/ISET.TXT",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS341-Computer_Architecture_Lab/170050045-06/winmips64/lab06-answers.txt",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS341-Computer_Architecture_Lab/170050045-06/winmips64/testio.s",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS341-Computer_Architecture_Lab/170050045-06/testio.s",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS753/assgmt2/kaldi/egs/assgmt2/recipe/corpus/lang/nonsilence_phones.txt",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS753/assgmt2/kaldi/egs/assgmt2/recipe/corpus/data/test/spk2utt",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS753/assgmt2/kaldi/egs/assgmt2/recipe/corpus/lang/lexicon.txt",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS753/assgmt2/kaldi/egs/assgmt2/recipe/corpus/lang/optional_silence.txt",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS753/assgmt2/kaldi/egs/assgmt2/recipe/utils",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/asmutils.s",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/lab05-answers.txt",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/gcd.c",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/cycleCount.py",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/trace",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/trace_opt",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/gcd_noopt.s",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/gcd_opt.s",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/gcd_noopt.s",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/gcd.s",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/gcd_opt.s",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/gcd_opt_r.s",
+		"//wsl$/Ubuntu/home/saksham47/Documents/CS341-ComputerArchitecture_Lab/170050045-05/lab05-files/gcd_mod.s",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS347_333-Operating_Systems/xv6-public/syscall.c",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HS303-Psychology/Names.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HS303-Psychology/NOTES.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HS303-Psychology/LittleAlbert.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HS303-Psychology/New Notes.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HS303-Psychology/greebleExperiment",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HS303-Psychology/EbbinghausExperiment.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HS303-Psychology/ChokingExperiment.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS753-ASR/MilgramsExperiment.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/__pycache__/kernel_logistic.cpython-37.pyc",
+		"/C/Users/saksham/Desktop/plan.txt",
+		"/C/Users/saksham/Desktop/To_Kill_a_Mockingbird_words.txt",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/NOTES.txt",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/kernel_logistic.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/utils.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/problem4_2.csv",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/problem4_1.csv",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/plot.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/autograder.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/krr.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/task.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/dataset/Admission.csv",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/dataset/bank.csv",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/NOTES",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/HYPERPARAMETERS",
+		"/C/Users/saksham/AppData/Local/Temp/autograder.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/Lab3/dataset1.txt",
+		"/C/Users/saksham/Desktop/HONDA_YES",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/CS335-AI_ML/task.py",
+		"/C/Users/saksham/Desktop/TODO_rnd.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Resume/projectDescriptions",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HondaYES",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem V/HondaYESEcoTech",
+		"/C/Users/saksham/Desktop/test.py",
+		"/C/Users/saksham/Desktop/randomForests.md",
+		"/C/Users/saksham/Desktop/DAMP App",
+		"/C/Users/saksham/AppData/Local/Temp/scp17526/home/aman/Desktop/NewOne/README.md",
+		"/C/Users/saksham/AppData/Local/Temp/scp17757/home/aman/Desktop/NewOne/commit1.txt",
+		"/C/Users/saksham/Desktop/redness-measurement-js/.kubernetes/Deployment.yml",
+		"/C/Users/saksham/Desktop/redness-measurement-js/.kubernetes/PostGRE_deployment.yml",
+		"/C/Users/saksham/Desktop/redness-measurement-js/paperjsExample.html",
+		"/C/Users/saksham/Desktop/redness-measurement-js/js/mainScript.js",
+		"/C/Users/saksham/Desktop/redness-measurement-js/js/intro.js-2.9.3/README.md",
+		"/C/Users/saksham/Desktop/redness-measurement-js/.gitlab-ci.yml",
+		"/C/Users/saksham/Desktop/redness-measurement-js/.kubernetes/PostGRE_secret.yml",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Summers 2019/Google Cloud Tutorial/getting-started-java/bookshelf/2-structured-data/index.yaml",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Summers 2019/Google Cloud Tutorial/getting-started-java/bookshelf/README.md",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Summers 2019/redness-measurement-mvn/pom.xml",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Summers 2019/TODO",
+		"/C/Users/saksham/AppData/Local/Temp/Temp1_apache-maven-3.6.1-bin.zip/apache-maven-3.6.1/README.txt",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/tb_Main_Machine.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/helloalive.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/FloodingFSM.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/interfaceOut.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/LinkStateUpdateMachine.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/testBench/OSPFHeader.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/helloActParse.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/MainModule.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/DBtoDijkstra.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Summers 2019/House M.D/House, M.D. Season 1 (1080p x265 Joy)/How to play HEVC (THIS FILE).txt",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/lsugen.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/init.coe",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/ramdb.coe",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/dijkstra_maybe.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/Dijkstra_tb.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/LSUM_tb.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/LinkStateMachineAssumptions.txt",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Personal/Downloads_backup/Thank You Dimple Kochar.txt",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/Dijkstra.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/message_parser.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/dijkstra_lol.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/comparator_new.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/Comparator.vhd",
+		"/C/Users/saksham/Desktop/Project L-GC/cc2016/paper/makefile",
+		"/C/Users/saksham/Desktop/MainParser.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/Comparator_Simple.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/Comparator_Single.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/generateComparatortb.py",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/Comparator_tb.vhd",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 226 - Digital Logic Design/ISE/CS226_OSPF/OSPF/tb_helloalive.vhd",
+		"/C/Users/saksham/AppData/Local/Temp/Temp1_true_dpram_sclk.zip/true_dpram_sclk.vhd",
+		"/C/Games/Devil May Cry 5/DevilMayCry5.exe",
+		"/C/Users/saksham/OneDrive - iitb.ac.in/Sem IV/CS 228 - Logic for Computer Science/testcases.txt"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 116.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "knight_walk.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								346,
+								346
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 42.4
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 150.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sub_settings.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
