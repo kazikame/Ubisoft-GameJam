@@ -10,7 +10,7 @@ public class knight_walk : MonoBehaviour
     int walkAnim = 0;
     int runAnim = 0;
     Animator anim;
-    public KeyCode up, down, left, right, run;
+    public KeyCode up, down, left, right, run, Study;
 
     // Start is called before the first frame update
     void Start()
