@@ -23,23 +23,39 @@ public class Throw : MonoBehaviour {
     float last_hit_time;
     bool isBlocked;
     public float stunEps = 4f;
+    bool thrown = false;
+    public float meleeDamage = -0.5f;
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "picked")
+    //    {
+    //        // Insert code for hurt :/ :/
 
-    public float meleeDamage = -2f;
-    private void OnCollisionEnter(Collision collision)
+    //        Destroy(collision.gameObject);
+    //    }
+    //}
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "picked")
+        if (other.gameObject.tag == "picked")
         {
-            // Insert code for hurt :/ :/
-            gameObject.GetComponent<PlayerCPI>().changeCPI(collision.gameObject.GetComponent<destroyOnInvisible>().damage);
-            Destroy(collision.gameObject);
+            if (!thrown)
+            {
+                gameObject.GetComponent<PlayerCPI>().changeCPI(other.gameObject.GetComponent<destroyOnInvisible>().damage);
+                Destroy(other.gameObject);
+            }
+
+            else
+            {
+                thrown = false;
+            }
         }
     }
-
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "pickable")
         {
-            Debug.Log("Inside pickable");
+            //Debug.Log("Inside pickable");
             if (Input.GetKeyDown(pickKey))
             {
                 //If object already exists, reset it and leave it in the world
@@ -68,8 +84,9 @@ public class Throw : MonoBehaviour {
             //    Debug.Log("Hurt :/ :/");
             //}
 
-            if (Input.GetKeyDown(attackKey) && Vector3.Angle(other.transform.position - transform.position, GetComponent<Collider>().transform.forward) < eps_angle)
+            if (Input.GetKeyUp(attackKey) && Vector3.Angle(other.transform.position - transform.position, GetComponent<Collider>().transform.forward) < eps_angle)
             {
+                Debug.Log("Hit!");
                 if (textbox != null)
                     Destroy(textbox);
                 textbox = Instantiate(nahiPadha, transform, false);
@@ -85,6 +102,8 @@ public class Throw : MonoBehaviour {
                 }
             }
         }
+
+        
         //else if (other.gameObject.tag == "melee")
         //{
         //    if (Input.GetKeyDown(pickKey))
@@ -120,6 +139,7 @@ public class Throw : MonoBehaviour {
         {
             if (throwObject != null)
             {
+                thrown = true;
                 Rigidbody rb_obj = throwObject.GetComponent<Rigidbody>();
                 throwObject.transform.parent = null;
                 throwObject.GetComponent<Collider>().enabled = true;

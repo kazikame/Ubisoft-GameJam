@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Table : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Table : MonoBehaviour
     private float studyTime = 5f;
     private float elapsed = 0;
     private GameObject current_player;
+
+
     private List<Vector3> positions = new List<Vector3>();
 
     // Start is called before the first frame update
@@ -23,13 +26,30 @@ public class Table : MonoBehaviour
     //    if (Vector3.Distance(player.transform.position, )
     //    if(Input.GetKey(player.GetComponent<knight_walk>.Study))
     //}
+    //private void OnCollisionStay(Collision collision)
+    //{
+    //    Debug.Log("Inside!");
+    //    if (!studying && collision.gameObject.tag == "player")
+    //    {
+    //        GameObject nearPlayer = collision.gameObject;
+    //        //Debug.Log("Player Near");
+    //        if (Input.GetKeyDown(nearPlayer.GetComponent<knight_walk>().Study))
+    //        {
+    //            studying = true;
+    //            elapsed = 0;
+    //            current_player = nearPlayer;
+    //            nearPlayer.GetComponent<Player_status>().lockControls = true;
+    //            Debug.Log("New player studying");
+    //        }
+    //    }
+    //}
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider collision)
     {
-
-        if (!studying && other.gameObject.tag == "player")
+        Debug.Log("Inside! trigger");
+        if (!studying && collision.gameObject.tag == "player")
         {
-            GameObject nearPlayer = other.gameObject;
+            GameObject nearPlayer = collision.gameObject;
             //Debug.Log("Player Near");
             if (Input.GetKeyDown(nearPlayer.GetComponent<knight_walk>().Study))
             {
@@ -63,7 +83,7 @@ public class Table : MonoBehaviour
                     studying = false;
                     //
                     //current_player.GetComponent<Player_status>().CPI += 4;
-                    current_player.GetComponent<PlayerCPI>().changeCPI(0.5f);
+                    current_player.GetComponent<PlayerCPI>().changeCPI(1f);
                     current_player.GetComponent<Player_status>().lockControls = false;
                     current_player.GetComponent<Throw>().hits_taken = 0;
                 }

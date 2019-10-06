@@ -30,7 +30,7 @@ public class randomDrops : MonoBehaviour
         {
             for (float z = zrangel + 1; z < zranger; z++)
             {
-                positions.Add(new Vector3(x, pos.y+ .5f *scale.y+ 4f, z));
+                positions.Add(new Vector3(x, pos.y+ .5f *scale.y+0.3f, z));
             }
         }
     }
@@ -42,10 +42,10 @@ public class randomDrops : MonoBehaviour
         {
 
             int randindex = Random.Range(0, positions.Count);
-            Debug.Log(randindex.ToString());
+            //Debug.Log(randindex.ToString());
             randomposition = positions[randindex];
 
-        } while ((Physics.OverlapBox(randomposition, gameobject.transform.localScale / 2)).Length != 0);
+        } while ((Physics.OverlapBox(randomposition, gameobject.transform.localScale / 2)).Length > 1);
         Instantiate(gameobject, randomposition, Quaternion.identity);
     }
     // Start is called before the first frame update
@@ -56,10 +56,10 @@ public class randomDrops : MonoBehaviour
         {
 
             int randindex = Random.Range(0, positions.Count);
-            Debug.Log(randindex.ToString());
-            randomposition = positions[randindex];
+            //Debug.Log(randindex.ToString());
+            randomposition = positions[randindex] + new Vector3(0f, gameObject.GetComponent<Collider>().bounds.size.y / 2 + 0.5f, 0f);
 
-        } while ((Physics.OverlapBox(randomposition, gameObject.transform.localScale / 2)).Length != 0);
+        } while ((Physics.OverlapBox(randomposition, gameObject.transform.localScale / 2)).Length > 1);
         //Instantiate(gameobject, randomposition, Quaternion.identity);
         gameObject.transform.position = randomposition;
     }
@@ -75,7 +75,7 @@ public class randomDrops : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
-        if (tabletimer < 0)
+        if (tabletimer < 0 && !table.GetComponent<Table>().studying)
         {
             SpawnTable(table);
             tabletimer = spawnperiodtable;

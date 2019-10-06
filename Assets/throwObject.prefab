@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4580312908337627071}
   - component: {fileID: 4580312908337627067}
   - component: {fileID: 114724440913122276}
+  - component: {fileID: 135726724856682466}
   m_Layer: 0
   m_Name: throwObject
   m_TagString: pickable
@@ -107,3 +108,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f603be112eb944f8a3c801b0bb418c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: -1
+--- !u!135 &135726724856682466
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580312908337627069}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
