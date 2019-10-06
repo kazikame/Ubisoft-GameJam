@@ -9,9 +9,12 @@ public class GameOverManager : MonoBehaviour
 
     public GameObject player1;
 	public GameObject player2;
+    public GameObject gameover1;
+    public GameObject gameover2;
     void Start()
     {
-        
+        gameover1.SetActive(false);
+        gameover2.SetActive(false);
     }
 
     // Update is called once per frame
@@ -19,11 +22,15 @@ public class GameOverManager : MonoBehaviour
     {
 		if (player1.GetComponent<PlayerCPI>().currentCPI >= 10f || player2.GetComponent<PlayerCPI>().currentCPI <= 0f)
 		{
-			SceneManager.LoadScene("scenep1");
-		}
+            gameover1.SetActive(true);
+            player1.GetComponent<Player_status>().lockControls = true;
+            player2.GetComponent<Player_status>().lockControls = true;
+        }
 		if (player2.GetComponent<PlayerCPI>().currentCPI >= 10f || player1.GetComponent<PlayerCPI>().currentCPI <= 0f)
 		{
-			SceneManager.LoadScene("scenep2");
-		}
+            gameover2.SetActive(true);
+            player1.GetComponent<Player_status>().lockControls = true;
+            player2.GetComponent<Player_status>().lockControls = true;
+        }
 	}
 }

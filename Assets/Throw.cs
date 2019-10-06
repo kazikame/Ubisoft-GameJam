@@ -23,7 +23,7 @@ public class Throw : MonoBehaviour {
     bool isBlocked;
     public float stunEps = 4f;
     bool thrown = false;
-    public float meleeDamage = -0.5f;
+    public float meleeDamage = -0.25f;
     //private void OnCollisionEnter(Collision collision)
     //{
     //    if (collision.gameObject.tag == "picked")
