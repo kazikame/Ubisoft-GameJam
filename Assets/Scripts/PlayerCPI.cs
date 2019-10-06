@@ -9,7 +9,7 @@ public class PlayerCPI : MonoBehaviour
     public Slider HealthBar;
     public Color MaxHealthColor = Color.green;
     public Color MinHealthColor = Color.red;
-    private float currentCPI;
+    public float currentCPI;
     public float maxCPI;
     void Start()
     {

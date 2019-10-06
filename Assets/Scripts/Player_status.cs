@@ -10,6 +10,7 @@ public class Player_status : MonoBehaviour
     public bool lockControls;
     public bool stunLock;
     public int stunTimer = 4;
+    public int playerID;
 
     void Start()
     {

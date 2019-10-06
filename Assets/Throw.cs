@@ -5,7 +5,6 @@ using UnityEngine;
 public class Throw : MonoBehaviour {
     // Temp, in actual will be replaced by the 'picked' object
     public int throwSpeed = 100;
-    public GameObject pickedTemplate;
     GameObject throwObject = null;
     public bool isLocked;
     public bool isHit;
@@ -64,7 +63,7 @@ public class Throw : MonoBehaviour {
                     throwObject.transform.parent = null;
                     throwObject.GetComponent<Collider>().enabled = true;
                     throwObject.transform.position -= new Vector3(0, 1, 0);
-                    throwObject.tag = pickedTemplate.tag;
+                    throwObject.tag = "picked";
                     throwObject = null;
                 }
                 //TODO: Smoothen this!
@@ -72,7 +71,7 @@ public class Throw : MonoBehaviour {
                 obj.transform.parent = this.gameObject.transform;
                 obj.transform.position += (new Vector3(0, 1, 0)) + Quaternion.Euler(0, 90, 0) * transform.forward;
                 throwObject = obj;
-                throwObject.tag = pickedTemplate.tag;
+                throwObject.tag = "picked";
                 throwObject.GetComponent<Collider>().enabled = false;
             }
         }

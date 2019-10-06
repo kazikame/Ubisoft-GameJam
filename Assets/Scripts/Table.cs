@@ -9,9 +9,11 @@ public class Table : MonoBehaviour
     public bool studying;
     public GameObject[] Players;
     private float studyTime = 5f;
-    private float elapsed = 0;
+    private float elapsed = 0f;
     private GameObject current_player;
-
+    public GameObject study1;
+    public GameObject study2;
+    private GameObject study;
 
     private List<Vector3> positions = new List<Vector3>();
 
@@ -19,6 +21,9 @@ public class Table : MonoBehaviour
     void Start()
     {
         studying = false;
+        study1.SetActive(false);
+        study2.SetActive(false);
+        elapsed = 0f;
     }
 
     //bool isNearKeyPress(GameObject player)
@@ -56,6 +61,18 @@ public class Table : MonoBehaviour
                 studying = true;
                 elapsed = 0;
                 current_player = nearPlayer;
+                if(nearPlayer.GetComponent<Player_status>().playerID == 1)
+                {
+                    study = study1;
+                    
+
+                }
+                else if (nearPlayer.GetComponent<Player_status>().playerID == 2)
+                {
+                    study = study2;
+                }
+                study.SetActive(true);
+                study.GetComponent<Slider>().value = (elapsed / studyTime) * 10f;
                 nearPlayer.GetComponent<Player_status>().lockControls = true;
                 Debug.Log("New player studying");
             }
@@ -69,6 +86,7 @@ public class Table : MonoBehaviour
             if (Input.GetKeyUp(current_player.GetComponent<knight_walk>().Study)|| current_player.GetComponent<Throw>().hits_taken > 0)
             {
                 studying = false;
+                study.SetActive(false);
                 current_player.GetComponent<Player_status>().lockControls = false;
                 current_player.GetComponent<Throw>().hits_taken = 0;
                 elapsed = 0;
@@ -76,12 +94,14 @@ public class Table : MonoBehaviour
             else
             {
                 elapsed += Time.deltaTime;
+                study.GetComponent<Slider>().value = (elapsed / studyTime) * 10f;
                 Debug.Log("Studying :D");
                 if (elapsed > studyTime)
                 {
                     elapsed = 0;
                     studying = false;
                     //
+                    study.SetActive(false);
                     //current_player.GetComponent<Player_status>().CPI += 4;
                     current_player.GetComponent<PlayerCPI>().changeCPI(1f);
                     current_player.GetComponent<Player_status>().lockControls = false;

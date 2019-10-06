@@ -13,6 +13,7 @@ public class randomDrops : MonoBehaviour
     private float tabletimer;
     private float spawnperiod= 5f;
     private float spawnperiodtable = 5f;
+    private int maxspawns=6;
     private void Start()
     {
         InitializePositions();
@@ -37,6 +38,7 @@ public class randomDrops : MonoBehaviour
 
     void GiveRandomPosition(GameObject gameobject)
     {
+        
         Vector3 randomposition = new Vector3();
         do
         {
@@ -45,11 +47,11 @@ public class randomDrops : MonoBehaviour
             //Debug.Log(randindex.ToString());
             randomposition = positions[randindex];
 
-        } while ((Physics.OverlapBox(randomposition, gameobject.transform.localScale / 2)).Length > 1);
-        Instantiate(gameobject, randomposition, Quaternion.identity);
+        } while ((Physics.OverlapBox(randomposition, gameobject.GetComponent<Collider>().bounds.size / 2)).Length > 0);
+        Instantiate(gameobject, randomposition, Quaternion.identity,transform);
     }
     // Start is called before the first frame update
-    void SpawnTable(GameObject gameObject)
+    void SpawnTable(GameObject gameobject)
     {
         Vector3 randomposition = new Vector3();
         do
@@ -57,18 +59,19 @@ public class randomDrops : MonoBehaviour
 
             int randindex = Random.Range(0, positions.Count);
             //Debug.Log(randindex.ToString());
-            randomposition = positions[randindex] + new Vector3(0f, gameObject.GetComponent<Collider>().bounds.size.y / 2 + 0.5f, 0f);
+            randomposition = positions[randindex] + new Vector3(0f, gameobject.GetComponent<Collider>().bounds.size.y / 2 + 0.5f, 0f);
 
-        } while ((Physics.OverlapBox(randomposition, gameObject.transform.localScale / 2)).Length > 1);
+        } while ((Physics.OverlapBox(randomposition, gameobject.GetComponent<Collider>().bounds.size / 2)).Length > 0);
         //Instantiate(gameobject, randomposition, Quaternion.identity);
-        gameObject.transform.position = randomposition;
+        gameobject.transform.position = randomposition;
     }
     // Update is called once per frame
     void Update()
     {
-        if (timer < 0)
+        if (timer < 0 && transform.childCount<maxspawns)
         {
             GiveRandomPosition(obj);
+        
             timer = spawnperiod;
         }
         else
