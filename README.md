@@ -1,5 +1,6 @@
 # Introduction
 Local multiplayer battle royale game built on Unity for the Ubisoft GameJam 2019 48 hours hackathon.
+For a working version, check [**this**](https://www.cse.iitb.ac.in/~saksham.goel/RGWebGL/index.html) out!
 
 # Build
 Clone and run on Unity (ver >= 2018v)
